@@ -1,0 +1,143 @@
+/*صفحه چهارم*/
+body {
+		background-color:#121212;
+		  color: #E0E0E0;  /* همه متن‌ها این رنگو می‌گیرن */
+		font-family: sans-serif;
+}
+a{
+	text-decoration:none;
+}
+	
+	
+ul li a {
+    background-color: #121212;   /* پس‌زمینه تیره */
+    color: #e0e0e0;              /* رنگ متن */
+    border: 5px ridge #901bf0;   /* بوردر بنفش */
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: .4s;
+    display: inline-block;
+}
+
+ul li a:hover {
+    background-color: #1e1e1e;   /* کمی روشن‌تر */
+    color: #ff9800;              /* متن نارنجی */
+    border-color: #ff9800;       /* بوردر نارنجی */
+}
+#sebalan {
+  /* رنگ ساده برای مرورگرهای خیلی قدیمی */
+    background: -webkit-linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* قدیمیِ کروم/سافاری */
+	background: -moz-linear-gradient(135deg, #0f2027, #203a43, #2c5364);    /* فایرفاکس قدیمی */
+	background: -o-linear-gradient(135deg, #0f2027, #203a43, #2c5364);      /* اپرا قدیمی */
+	color: #fff;               /* خوانایی متن روی گرادینت */
+	text-align: center;        /* به‌جای <center> */
+	padding: 2rem;
+	border-radius: 16px;       /* گوشه‌های گرد، اختیاری */
+	direction: rtl;            /* متن فارسی راست‌به‌چپ */
+	font-family: sans-serif;   /* فونت تمیزتر */
+	box-shadow:inset 0px 0px 3px 5px black;
+}
+\*{
+box-sizing: border-box;
+font-family: Vazirmatn, sans-serif;
+}
+body{
+margin:0;
+display\:flex;
+justify-content\:center;
+align-items\:center;
+height:100vh;
+background-color:#121212;
+color:#e5e7eb;
+}
+.container{
+width:100%;
+max-width:400px;
+background:#111827;
+padding:30px 25px;
+border-radius:20px;
+box-shadow:0 0 30px rgba(0,0,0,0.4);
+display\:flex;
+flex-direction\:column;
+align-items\:center;
+}
+.tabs{
+display\:flex;
+justify-content\:space-around;
+width:100%;
+margin-bottom:20px;
+}
+.tab{
+flex:1;
+text-align\:center;
+padding:18px;
+cursor\:pointer;
+border-bottom:2px solid transparent;
+transition:0.3s;
+font-weight\:bold;
+}
+\#login-tab\:checked \~ .tabs label\[for="login-tab"]{
+border-color:#22d3ee;
+color:#22d3ee;
+}
+\#register-tab\:checked \~ .tabs label\[for="register-tab"]{
+border-color:#22d3ee;
+color:#22d3ee;
+}
+.forms{
+position\:relative;
+width:100%;
+}
+.form{
+display\:none;
+flex-direction\:column;
+gap:14px;
+animation: fade .4s ease;
+}
+.field{
+	gap:6px;
+display\:flex;
+flex-direction\:column;
+
+}
+input{
+padding:12px;
+border-radius:10px;
+border:1px solid #374151;
+background:#0b1220;
+color:#e5e7eb;
+transition: all .2s ease;
+}
+input\:focus{
+border-color:#22d3ee;
+box-shadow:0 0 8px #22d3ee88;
+outline\:none;
+}
+button{
+padding-right:50px;
+border\:none;
+border-radius:12px;
+background\:linear-gradient(135deg,#06b6d4,#22d3ee);
+color:#021018;
+font-weight\:bold;
+cursor\:pointer;
+box-shadow:0 6px 14px rgba(34,211,238,0.4);
+transition\:transform .15s ease, box-shadow .2s;
+}
+button\:hover{
+box-shadow:0 8px 18px rgba(34,211,238,0.6);
+transform\:translateY(-2px);
+}
+button\:active{
+transform\:translateY(1px);
+}
+\#login-tab\:checked \~ .forms .login-form{
+display\:flex;
+}
+\#register-tab\:checked \~ .forms .register-form{
+display\:flex;
+}
+@keyframes fade{
+from{opacity:0; transform\:translateY(10px)}
+to{opacity:1; transform\:translateY(0)}
+}
